@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebFinal
+namespace WebFinal.Sections.Usuarios
 {
 
 
-    public partial class Contact
+    public partial class Usuarios
     {
     }
 }
