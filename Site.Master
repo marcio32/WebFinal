@@ -5,6 +5,7 @@
 <html lang="es">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
@@ -15,6 +16,11 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css">
+    <link rel="stylesheet" href="https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css">
+
 
 </head>
 <body>
@@ -52,8 +58,12 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
+                        <li><a runat="server" href="~/Sections/Usuarios/Usuarios">Usuarios</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/Contact">Grid</a></li>
+                        <li><a runat="server" href="~//Sections/EjemploTransferenciaA/EjemploTransferenciaA">EjemploTransferenciaA</a></li>
+                        <li><a runat="server" href="~//Sections/EjemploTransferenciaB/EjemploTransferenciaB">EjemploTransferenciaB</a></li>
+                        <li><a runat="server" href="~/Sections/Login/Login">Cerrar Sesion</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,3 +80,7 @@
     </form>
 </body>
 </html>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/datetime/1.1.2/js/dataTables.dateTime.min.js"></script>
+<script src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
+<script src="https://kit.fontawesome.com/f8fcaa487b.js" crossorigin="anonymous"></script>
