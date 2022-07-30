@@ -11,6 +11,17 @@ namespace WebFinal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if (Session["Token"].ToString() == "")
+                {
+                    Response.Redirect("~/Default.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Default.aspx");
+            }
 
         }
     }
